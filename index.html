@@ -1,135 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Haseef in Prime</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { height: 100%; font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, sans-serif; background: #000; color: #fff; overflow-x: hidden; }
+  <meta charset="UTF-8">
+  <title>FRZ GENERATIONS • Maintenance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    .section {
-      min-height: 100vh;
-      width: 100vw;
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #020617;
+      color: #f9fafb;
+      font-family: system-ui, sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
-      position: relative;
-    }
-
-    .bg-image {
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.7));
-      z-index: 1;
-    }
-
-    .content {
-      position: relative;
-      z-index: 2;
       text-align: center;
-      padding: 20px;
-      animation: fadeUp 1.5s ease forwards;
+      padding: 1.5rem;
+    }
+
+    .box {
+      max-width: 480px;
+      border: 1px solid #1e293b;
+      border-radius: 16px;
+      padding: 2rem;
+      background: radial-gradient(circle at top, #0f172a, #020617);
     }
 
     h1 {
-      font-size: clamp(2.5rem, 6vw, 4.5rem);
-      letter-spacing: 2px;
-      margin-bottom: 10px;
+      letter-spacing: 0.25em;
+      font-size: 1.1rem;
+      color: #fef3c7;
+      margin-bottom: 0.5rem;
+    }
+
+    .status {
+      color: #f97316;
+      font-weight: 600;
+      margin-bottom: 1rem;
     }
 
     p {
-      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-      opacity: 0.9;
-    }
-
-    .scroll-indicator {
-      position: absolute;
-      bottom: 30px;
       font-size: 0.9rem;
-      opacity: 0.8;
-      animation: bounce 2s infinite;
-      z-index: 2;
+      line-height: 1.6;
+      color: #e5e7eb;
     }
 
-    .video-wrapper {
-      width: 90%;
-      max-width: 420px;
-      box-shadow: 0 0 40px rgba(255,255,255,0.15);
-      border-radius: 16px;
-      overflow: hidden;
-      animation: fadeUp 1.5s ease forwards;
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-      40% { transform: translateY(-8px); }
-      60% { transform: translateY(-4px); }
-    }
-
-    .footer {
-      position: absolute;
-      bottom: 10px;
-      width: 100%;
-      text-align: center;
-      font-size: 0.8rem;
-      opacity: 0.6;
-      z-index: 2;
+    footer {
+      margin-top: 1.5rem;
+      font-size: 0.75rem;
+      color: #9ca3af;
     }
   </style>
-  <meta http-equiv="refresh" content="0; url=https://tebinnovations.in/">
 </head>
 <body>
+  <div class="box">
+    <h1>FRZ GENERATIONS</h1>
+    <div class="status">Server Down / Maintenance Mode</div>
 
-  <!-- Section 1: Welcome + First Image -->
-  <section class="section bg-image" style="background-image: url('https://i.ibb.co/1fQCfYnz/Screenshot-2025-10-08-212620.png');">
-    <div class="overlay"></div>
-    <div class="content">
-      <h1>Welcome to<br>Haseef in Prime</h1>
-      <p>Experience the presence. Feel the prime.</p>
-    </div>
-    <div class="scroll-indicator">▼ Scroll Down</div>
-  </section>
+    <p>
+      The FRZ GENERATIONS server is currently unavailable or under maintenance.<br><br>
+      Please wait for some time — we’ll update it shortly.
+    </p>
 
-  <!-- Section 2: Second Fullscreen Image -->
-  <section class="section bg-image" style="background-image: url('https://i.ibb.co/s9LQ0D4H/gandr-collage.jpg');">
-    <div class="overlay"></div>
-    <div class="content">
-      <h1>Power • Focus • Vision</h1>
-      <p>Every moment defines the prime</p>
-    </div>
-  </section>
-
-  <!-- Section 3: Video -->
-  <section class="section" style="background: radial-gradient(circle at top, #111, #000);">
-    <div class="content">
-      <h1>Watch the Prime</h1>
-      <p style="margin-bottom: 25px;">Dive into the story of Haseef in Prime</p>
-      <div class="video-wrapper">
-        <div style="position: relative; padding-bottom: 177.78%; height: 0;">
-          <iframe
-            src="https://jumpshare.com/embed/uexR4YuNvmxuAdRQPA5T"
-            frameborder="0"
-            allowfullscreen
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-          </iframe>
-        </div>
-      </div>
-    </div>
-    <div class="footer">© 2025 • Haseef in Prime</div>
-  </section>
-
+    <footer>
+      © 2026 FRZ GENERATIONS
+    </footer>
+  </div>
 </body>
 </html>
-
